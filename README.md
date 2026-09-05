@@ -68,6 +68,12 @@ If you find this work useful, please cite:
 - 🤗 [Hugging Face](https://huggingface.co/papers/2511.22777)
 - 👤 [Google Scholar](https://scholar.google.com/citations?user=DZzLzNwAAAAJ)
 - 💼 [LinkedIn](https://www.linkedin.com/in/sajjad-pakdaman-savoji/)
+- ✉️ [sj.pakdaman.edu@gmail.com](mailto:sj.pakdaman.edu@gmail.com)
+
+## Contact
+
+For questions about the paper, data, or code release, contact
+**Sajjad Pakdamansavoji** &mdash; [sj.pakdaman.edu@gmail.com](mailto:sj.pakdaman.edu@gmail.com).
 
 ## Acknowledgements
 
