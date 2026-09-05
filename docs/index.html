@@ -9,8 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sajjadpsavoji.github.io/NICE-Scene-Surgery/">
 <meta name="twitter:card" content="summary_large_image">
-<!-- TODO: add docs/static/teaser.png (1200x630) for social previews, then uncomment:
-<meta property="og:image" content="https://sajjadpsavoji.github.io/NICE-Scene-Surgery/static/teaser.png"> -->
+<meta property="og:image" content="https://sajjadpsavoji.github.io/NICE-Scene-Surgery/static/teaser.png">
 <meta name="citation_title" content="Improving Robotic Manipulation Robustness via NICE Scene Surgery">
 <meta name="citation_author" content="Sajjad Pakdamansavoji">
 <meta name="citation_author" content="Mozhgan Pourkeshavarz">
@@ -42,6 +41,9 @@ h1{font-size:clamp(28px,4.4vw,42px);line-height:1.18;margin:0 0 10px;letter-spac
 .authors a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--rule)}
 .authors .me{font-weight:700}
 .affil{color:var(--muted);font-size:14.5px;margin:6px 0 0}
+.notes{color:var(--muted);font-size:13px;margin:8px 0 0}
+.teaser{margin:34px 0 0}
+img{max-width:100%;height:auto;display:block;margin:0 auto;border-radius:8px}
 .btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:30px 0 4px}
 .btn{display:inline-flex;align-items:center;gap:7px;padding:9px 17px;border-radius:999px;
   background:var(--chip);color:var(--chipfg);text-decoration:none;font-size:14.5px;font-weight:500;
@@ -71,8 +73,9 @@ a{color:var(--accent)}
   <div class="venue">Preprint</div>
   <h1>Improving Robotic Manipulation Robustness via NICE Scene Surgery</h1>
   
-  <p class="authors"><span class="me">Sajjad Pakdamansavoji</span>, Mozhgan Pourkeshavarz, Adam Sigal, Zhiyuan Li, Rui Heng Yang, Amir Rasouli</p>
-  <p class="affil"><!-- TODO: replace with real affiliations -->Affiliations to be added</p>
+  <p class="authors"><span class="me">Sajjad Pakdamansavoji</span><sup>†</sup>, Mozhgan Pourkeshavarz<sup>*</sup>, Adam Sigal<sup>*</sup>, Zhiyuan Li, Rui Heng Yang, Amir Rasouli</p>
+  <p class="affil">Huawei Technologies Canada</p>
+  <p class="notes">†Corresponding author · *Work done while at Huawei Canada</p>
   <div class="btns">
     <a class="btn" href="https://arxiv.org/abs/2511.22777">Paper</a>
     <a class="btn" href="https://arxiv.org/pdf/2511.22777">PDF</a>
@@ -80,6 +83,7 @@ a{color:var(--accent)}
     <a class="btn" href="https://github.com/SajjadPSavoji/NICE-Scene-Surgery">Code</a>
     <a class="btn" href="#bibtex">BibTeX</a>
   </div>
+  <figure class="teaser"><img src="static/teaser.png" alt="NICE teaser"></figure>
 </div></header>
 <main class="wrap">
   <section>
@@ -89,15 +93,15 @@ a{color:var(--accent)}
   <section>
     <h2>Method</h2>
     <figure>
-      <div class="ph">Method figure &mdash; add <code>docs/static/method.png</code></div>
-      <figcaption>Overview of the approach.</figcaption>
+      <img src="static/method.png" alt="Method overview">
+      <figcaption>Overview of the proposed approach.</figcaption>
     </figure>
   </section>
   <section>
     <h2>Results</h2>
     <figure>
-      <div class="ph">Qualitative results &mdash; add <code>docs/static/results.png</code></div>
-      <figcaption>Qualitative comparison against baselines.</figcaption>
+      <img src="static/results.png" alt="Results">
+      <figcaption>Qualitative results and comparison against baselines.</figcaption>
     </figure>
   </section>
   <section id="bibtex">
