@@ -40,6 +40,17 @@ h1{font-size:clamp(28px,4.4vw,42px);line-height:1.18;margin:0 0 10px;letter-spac
 .authors .me{font-weight:700}
 .affil{color:var(--muted);font-size:14.5px;margin:6px 0 0}
 .notes{color:var(--muted);font-size:13px;margin:8px 0 0}
+figure.fig{margin:0 0 34px}
+figure.fig:last-child{margin-bottom:0}
+.tbl-wrap{overflow-x:auto;margin:0 0 10px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{padding:9px 14px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:600;color:var(--muted);font-size:12.5px;letter-spacing:.05em;
+  text-transform:uppercase;border-bottom:1.5px solid var(--fg)}
+tbody tr:last-child td{border-bottom:1.5px solid var(--fg)}
+.tbl-title{font-weight:600;font-size:15px;margin:0 0 12px}
+.tbl-note{color:var(--muted);font-size:13.5px;margin:8px 0 30px}
 .tldr{background:var(--tldr);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
   padding:18px 22px;margin:0;font-size:17.5px;line-height:1.6}
 ul.pts{margin:0;padding-left:22px}
@@ -89,7 +100,8 @@ a{color:var(--accent)}
     <a class="btn" href="https://github.com/SajjadPSavoji/NICE-Scene-Surgery">Code</a>
     <a class="btn" href="#bibtex">BibTeX</a>
   </div>
-  <figure class="teaser"><img src="static/teaser.png" alt="NICE teaser"></figure>
+  <figure class="teaser"><img src="static/teaser.png" alt="NICE overview">
+    <figcaption>Overview of the NICE framework. NICE takes existing robot demonstration data and performs replacement, restyling, or removal operations on distractor objects.</figcaption></figure>
 </div></header>
 <main class="wrap">
   <section>
@@ -105,19 +117,14 @@ a{color:var(--accent)}
     <ul class="pts"><li>A scene-level editing framework performing three operations — object replacement, restyling, and removal of non-target objects — using image generative models together with large language models.</li><li>Edits preserve spatial relationships and never obstruct target objects, keeping action labels valid, so no new action generation or teleoperation is required.</li><li>Realism validated against real-world counterparts on both background consistency and overall generation quality.</li><li>Demonstrated gains in visual affordance prediction across varying levels of clutter.</li><li>Real-world validation of policy robustness and safety across tasks and distractor counts.</li></ul>
   </section>
   <section>
-    <h2>Method</h2>
-    <figure>
-      <img src="static/method.png" alt="Method overview">
-      <figcaption>Overview of the proposed approach.</figcaption>
-    </figure>
+    <h2>Approach</h2>
+    <figure class="fig"><img src="static/approach1.png" alt="The NICE pipeline: object parsing, distractor selection, and"><figcaption>The NICE pipeline: object parsing, distractor selection, and generative scene editing, with action labels preserved throughout.</figcaption></figure><figure class="fig"><img src="static/approach2.png" alt="The object parsing step: object detection with Florence-2 an"><figcaption>The object parsing step: object detection with Florence-2 and segmentation used to isolate target and distractor objects.</figcaption></figure>
   </section>
   <section>
     <h2>Results</h2>
-    <figure>
-      <img src="static/results.png" alt="Results">
-      <figcaption>Qualitative results and comparison against baselines.</figcaption>
-    </figure>
-    <ul class="pts res" style="margin-top:26px"><li>Generates scenes realistic enough to significantly improve robot perception and downstream manipulation.</li><li>Improves policy robustness in environments populated with varying numbers of distractors.</li><li>Requires <strong>no additional robot data collection</strong> and minimal human involvement.</li></ul>
+    <ul class="pts res" style="margin-bottom:34px"><li>Generates scenes realistic enough to significantly improve robot perception and downstream manipulation.</li><li>Improves policy robustness in environments populated with varying numbers of distractors.</li><li>Requires <strong>no additional robot data collection</strong> and minimal human involvement.</li></ul>
+    
+    <figure class="fig"><img src="static/result1.png" alt="Data enhancement on the Bridge dataset. In each pair, left i"><figcaption>Data enhancement on the Bridge dataset. In each pair, left is the original image and right is the edited one.</figcaption></figure><figure class="fig"><img src="static/result2.png" alt="Real-world replication of the editing operations, used to va"><figcaption>Real-world replication of the editing operations, used to validate the realism of NICE-generated data.</figcaption></figure><figure class="fig"><img src="static/result3.png" alt="FID scores for the three enhancement strategies on real-worl"><figcaption>FID scores for the three enhancement strategies on real-world images.</figcaption></figure><figure class="fig"><img src="static/result4.png" alt="(Left) Performance of the manipulation policy finetuned on t"><figcaption>(Left) Performance of the manipulation policy finetuned on three data configurations. (Right) Experiment scenes with varying numbers of distractors.</figcaption></figure>
   </section>
   <section id="bibtex">
     <h2>BibTeX</h2>

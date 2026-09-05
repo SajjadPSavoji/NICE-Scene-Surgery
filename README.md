@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ## Results
 
-<img src="docs/static/results.png" width="100%">
+<img src="docs/static/result1.png" width="100%">
 
 - Generates scenes realistic enough to significantly improve robot perception and downstream manipulation.
 - Improves policy robustness in environments populated with varying numbers of distractors.
