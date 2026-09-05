@@ -2,7 +2,7 @@
 
 # Improving Robotic Manipulation Robustness via NICE Scene Surgery
 
-**Preprint**
+**CoRL 2025 Workshop on Making Sense of Data in Robotics**
 
 **Sajjad Pakdamansavoji**, Mozhgan Pourkeshavarz, Adam Sigal, Zhiyuan Li, Rui Heng Yang, Amir Rasouli
 
@@ -67,11 +67,11 @@ pip install -r requirements.txt
 If you find this work useful, please cite:
 
 ```bibtex
-@article{pakdamansavoji2025improving,
-  title   = {Improving Robotic Manipulation Robustness via NICE Scene Surgery},
-  author  = {Sajjad Pakdamansavoji and Mozhgan Pourkeshavarz and Adam Sigal and Zhiyuan Li and Rui Heng Yang and Amir Rasouli},
-  journal = {arXiv preprint arXiv:2511.22777},
-  year    = {2025}
+@inproceedings{pakdamansavoji2025improving,
+  title     = {Improving Robotic Manipulation Robustness via NICE Scene Surgery},
+  author    = {Sajjad Pakdamansavoji and Mozhgan Pourkeshavarz and Adam Sigal and Zhiyuan Li and Rui Heng Yang and Amir Rasouli},
+  booktitle = {CoRL Workshop on Making Sense of Data in Robotics: Composition, Curation, and Beyond},
+  year      = {2025}
 }
 ```
 
